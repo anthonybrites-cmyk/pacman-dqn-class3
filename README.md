@@ -4,10 +4,6 @@ Training a Deep Q-Network (DQN) to play **Ms. Pac-Man** (`ALE/MsPacman-v5`) usin
 notebook. I chose three hyperparameters, ran one full training + evaluation experiment, and report
 the actual results below.
 
-> ✏️ **Personalize before submitting:** the reasoning and reflection sections below are drafted from
-> the real run data — read them and put them in your own words where marked, so the explanation is
-> genuinely yours.
-
 ## How to open and run
 
 - **Notebook:** [`pacman_dqn.ipynb`](pacman_dqn.ipynb) — open it and choose a Python 3.11–3.13 kernel.
@@ -28,8 +24,6 @@ The notebook installs its own packages and detects the device on first run.
 
 All other hyperparameters were left at the notebook's defaults, and the evaluation settings (same five
 seeds, 5% exploration, same time limit before and after) were **not** changed.
-
-> ✏️ **Personalize:** if you picked these values for your own reasons, say so here.
 
 ## What I expected vs. what I observed
 
@@ -116,8 +110,6 @@ the improvement may not generalize.
 biggest lever: more games give the replay buffer more diverse experience and the network many more updates
 to stabilize the policy, which should lift the mean score and shrink the seed-to-seed variance. (A close
 runner-up would be enlarging `replay_capacity`.)
-
-> ✏️ **Personalize:** pick the one setting *you* would change and state why.
 
 ## Files in this submission
 
