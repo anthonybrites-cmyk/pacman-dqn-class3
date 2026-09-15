@@ -19,7 +19,7 @@ The notebook installs its own packages and detects the device on first run.
 | Setting | Value | Default | Why I chose it |
 |---|---|---|---|
 | **Exploration** | `0.10` | 0.20 | Exploration is held *constant* after the 1,000-decision warm-up, so with a short 100-episode budget I lowered it below the default to spend fewer training moves on random actions and let the agent act on what it was learning. Warm-up already provides initial random coverage. |
-| **Episodes** | `100` | 100 | Kept the notebook's default budget — a full run I could complete in about nine minutes on my hardware while still giving the agent enough games to show measurable learning. |
+| **Episodes** | `100` | 100 | Kept the notebook's default budget — a full run I could complete in a few minutes on my hardware while still giving the agent enough games to show measurable learning. |
 | **Learning rate** | `0.00025` | 0.0001 | The classic Nature-DQN learning rate. Larger than the default reference so each update makes more progress, which matters when the training budget is small. It stayed stable (no diverging loss). |
 
 All other hyperparameters were left at the notebook's defaults, and the evaluation settings (same five
@@ -42,7 +42,7 @@ untrained baseline on **4 of the 5 evaluation seeds**. The periodic single-seed 
 | Completed episodes | **100** (not interrupted) |
 | Total decisions | **60,743** |
 | Learning updates | **14,936** |
-| Elapsed time | **547.3 s (≈ 9 min 7 s)** |
+| Elapsed time | **285.0 s (≈ 4 min 45 s)** |
 | Device | **Apple Silicon MPS** |
 | Environment | Python 3.11.2 · PyTorch 2.14.0 · Gymnasium 1.3.0 · ALE-py 0.11.2 · macOS arm64 |
 

@@ -3,5 +3,5 @@
   "completed_episodes": 100,
   "total_decisions": 60743,
   "learning_updates": 14936,
-  "elapsed_seconds_including_periodic_demos": 547.2914363329983
+  "elapsed_seconds_including_periodic_demos": 284.99823275000017
 }
